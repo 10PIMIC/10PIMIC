@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>Grundregeln von Kniffel</h1>
+            <p>
+                Gespielt wird mit fünf Würfeln.
+                In jeder Runde darf der Spieler bis zu drei Mal hintereinander würfeln.
+                Dabei darf man „passende“ Würfel zur Seite legen und mit den verbleibenden weiter würfeln.
+                Nach dem zweiten Wurf dürfen Würfel, die beim ersten Wurf behalten wurden, wieder aufgenommen werden.
+                Spätestens nach dem dritten Wurf muss man sich für ein freies Feld auf dem Spielzettel entscheiden, welches nun mit dem Ergebnis dieses Wurfes bewertet wird – oder ein Feld streichen.
+            </p>
+        </div>
+        <div>
+            <h1>Obere Felder</h1>
+            <p>
+                In den oberen Feldern (Einser bis Sechser) werden jeweils gleiche Würfelwerte verzeichnet.
+                Wenn man beim Sammeln in der Summe mindestens 63 Punkte (beispielsweise für jedes Feld drei Würfel) bekommen hat, gibt es einen Bonus von 35 Punkten.
+            </p>
+            <div>
+                <table>
+                    <tbody>
+                    <tr>
+                        <th>Kategorie</th>
+                        <th>Beschreibung</th>
+                        <th>Wertung</th>
+                        <th colspan="6">Beispiel</th>
+                    </tr>
+                    <tr>
+                        <th>Einser</th>
+                        <td class="help">Jede Kombination</td>
+                        <td class="help">Die Summe der Augenzahlen der Einser</td>
+                        <td class="help">
+                            <img class="dice" src="img/1.png"/>
+                        </td>
+                        <td class="help">
+                            <img class="dice" src="img/1.png"/>
+                        </td>
+                        <td class="help">
+                            <img class="dice" src="img/1.png"/>
+                        </td>
+                        <td class="help">
+                            <img class="dice" src="img/3.png"/>
+                        </td>
+                        <td class="help">
+                            <img class="dice" src="img/4.png"/>
+                        </td>
+                        <td class="help">
+                            <p>Zählt 3</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Zweier</th>
+                        <td class="help">Jede Kombination</td>
+                        <td class="help">Die Summe der Augenzahlen der Zweier</td>
+                        <td class="help">
+                            <img class="dice" src="img/2.png"/>
+                        </td>
+                        <td class="help">
+                            <img class="dice" src="img/2.png"/>
+                        </td>
+                        <td class="help">
+                            <img class="dice" src="img/2.png"/>
+                        </td>
+                        <td class="help">
+                            <img class="dice" src="img/5.png"/>
+                        </td>
+                        <td class="help">
+                            <img class="dice" src="img/6.png"/>
+                        </td>
+                        <td class="help">
+                            <p>Zählt 6</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Dreier</th>
+                        <td class="help">Jede Kombination</td>
+                        <td class="help">Die Summe der Augenzahlen der Dreier</td>
+                        <td class="help">
+                            <img class="dice" src="img/3.png"/>
+                        </td>
+                        <td class="help">
+                            <img class="dice" src="img/3.png"/>
+                        </td>
+                        <td class="help">
+                            <img class="dice" src="img/3.png"/>
+                        </td>
+                        <td class="help">
+                            <img class="dice" src="img/3.png"/>
+                        </td>
+                        <td class="help">
+                            <img class="dice" src="img/4.png"/>
+                        </td>
+                        <td class="help">
+                            <p>Zählt 12</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Vierer</th>
+                        <td class="help">Jede Kombination</td>
+                        <td class="help">Die Summe der Augenzahlen der Vierer</td>
+                        <td class="help">
+                            <img class="dice" src="img/4.png"/>
+                        </td>
+                        <td class="help">
+                            <img class="dice" src="img/4.png"/>
+                        </td>
+                        <td class="help">
+                            <img class="dice" src="img/5.png"/>
+                        </td>
+                        <td class="help">
+                            <img class="dice" src="img/5.png"/>
+                        </td>
+                        <td class="help">
+                            <img class="dice" src="img/5.png"/>
+                        </td>
+                        <td class="help">
+                            <p>Zählt 8</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Fünfer</th>
+                        <td class="help">Jede Kombination</td>
+                        <td class="help">Die Summe der Augenzahlen der Fünfer</td>
+                        <td class="help">
+                            <img class="dice" src="img/1.png"/>
+                        </td>
+                        <td class="help">
+                            <img class="dice" src="img/1.png"/>
+                        </td>
+                        <td class="help">
+                            <img class="dice" src="img/2.png"/>
+                        </td>
+                        <td class="help">
+                            <img class="dice" src="img/2.png"/>
+                        </td>
+                        <td class="help">
+                            <img class="dice" src="img/6.png"/>
+                        </td>
+                        <td class="help">
+                            <p>Zählt 0</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Sechser</th>
+                        <td class="help">Jede Kombination</td>
+                        <td class="help">Die Summe der Augenzahlen der Sechser</td>
+                        <td class="help">
+                            <img class="dice" src="img/2.png"/>
+                        </td>
+                        <td class="help">
+                            <img class="dice" src="img/3.png"/>
+                        </td>
+                        <td class="help">
+                            <img class="dice" src="img/6.png"/>
+                        </td>
+                        <td class="help">
+                            <img class="dice" src="img/6.png"/>
+                        </td>
+                        <td class="help">
+                            <img class="dice" src="img/6.png"/>
+                        </td>
+                        <td class="help">
+                            <p>Zählt 18</p>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div>
+            <h1>Untere Felder</h1>
+            <p>
+                In den unteren Feldern werden Figuren gewürfelt und eingetragen.
+                Wenn man ein Ergebnis in ein Feld einträgt, bei dem die Bedingung nicht erfüllt ist (zum Beispiel wenn beim Feld Dreierpasch nicht drei Würfel gleich sind),
+                dann wird das Feld gestrichen oder die Punktzahl „0“ eingetragen.
+            </p>
+            <table>
+                <tbody>
+                <tr>
+                    <th>Kategorie</th>
+                    <th>Beschreibung</th>
+                    <th>Wertung</th>
+                    <th colspan="6">Beispiel</th>
+                </tr>
+                <tr>
+                    <th>Dreierpasch</th>
+                    <td class="help">Mindestens drei gleiche Würfel</td>
+                    <td class="help">Summe aller Augenzahlen</td>
+                    <td class="help">
+                        <img class="dice" src="img/2.png"/>
+                    </td>
+                    <td class="help">
+                        <img class="dice" src="img/3.png"/>
+                    </td>
+                    <td class="help">
+                        <img class="dice" src="img/4.png"/>
+                    </td>
+                    <td class="help">
+                        <img class="dice" src="img/4.png"/>
+                    </td>
+                    <td class="help">
+                        <img class="dice" src="img/4.png"/>
+                    </td>
+                    <td class="help">
+                        <p>Zählt 17</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Viererpasch</th>
+                    <td class="help">Mindestens vier gleiche Würfel</td>
+                    <td class="help">Summe aller Augenzahlen</td>
+                    <td class="help">
+                        <img class="dice" src="img/4.png"/>
+                    </td>
+                    <td class="help">
+                        <img class="dice" src="img/5.png"/>
+                    </td>
+                    <td class="help">
+                        <img class="dice" src="img/5.png"/>
+                    </td>
+                    <td class="help">
+                        <img class="dice" src="img/5.png"/>
+                    </td>
+                    <td class="help">
+                        <img class="dice" src="img/5.png"/>
+                    </td>
+                    <td class="help">
+                        <p>Zählt 24</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Full House</th>
+                    <td class="help">Drei gleiche und zwei gleiche Würfel oder fünf gleiche</td>
+                    <td class="help">25</td>
+                    <td class="help">
+                        <img class="dice" src="img/2.png"/>
+                    </td>
+                    <td class="help">
+                        <img class="dice" src="img/2.png"/>
+                    </td>
+                    <td class="help">
+                        <img class="dice" src="img/5.png"/>
+                    </td>
+                    <td class="help">
+                        <img class="dice" src="img/5.png"/>
+                    </td>
+                    <td class="help">
+                        <img class="dice" src="img/5.png"/>
+                    </td>
+                    <td class="help">
+                        <p>Zählt 25</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Kleine Straße</th>
+                    <td class="help">Vier aufeinanderfolgende Augenzahlen (1-2-3-4, 2-3-4-5 oder 3-4-5-6)</td>
+                    <td class="help">30</td>
+                    <td class="help">
+                        <img class="dice" src="img/1.png"/>
+                    </td>
+                    <td class="help">
+                        <img class="dice" src="img/3.png"/>
+                    </td>
+                    <td class="help">
+                        <img class="dice" src="img/4.png"/>
+                    </td>
+                    <td class="help">
+                        <img class="dice" src="img/5.png"/>
+                    </td>
+                    <td class="help">
+                        <img class="dice" src="img/6.png"/>
+                    </td>
+                    <td class="help">
+                        <p>Zählt 30</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Große Straße</th>
+                    <td class="help">Fünf aufeinanderfolgende Augenzahlen (1-2-3-4-5 oder 2-3-4-5-6)</td>
+                    <td class="help">40</td>
+                    <td class="help">
+                        <img class="dice" src="img/1.png"/>
+                    </td>
+                    <td class="help">
+                        <img class="dice" src="img/2.png"/>
+                    </td>
+                    <td class="help">
+                        <img class="dice" src="img/3.png"/>
+                    </td>
+                    <td class="help">
+                        <img class="dice" src="img/4.png"/>
+                    </td>
+                    <td class="help">
+                        <img class="dice" src="img/5.png"/>
+                    </td>
+                    <td class="help">
+                        <p>Zählt 40</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Kniffel</th>
+                    <td class="help">Fünf gleiche Würfel</td>
+                    <td class="help">50</td>
+                    <td class="help">
+                        <img class="dice" src="img/1.png"/>
+                    </td>
+                    <td class="help">
+                        <img class="dice" src="img/1.png"/>
+                    </td>
+                    <td class="help">
+                        <img class="dice" src="img/1.png"/>
+                    </td>
+                    <td class="help">
+                        <img class="dice" src="img/1.png"/>
+                    </td>
+                    <td class="help">
+                        <img class="dice" src="img/1.png"/>
+                    </td>
+                    <td class="help">
+                        <p>Zählt 50</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Chance</th>
+                    <td class="help">Jede Kombination</td>
+                    <td class="help">Summe aller Augenzahlen</td>
+                    <td class="help">
+                        <img class="dice" src="img/1.png"/>
+                    </td>
+                    <td class="help">
+                        <img class="dice" src="img/1.png"/>
+                    </td>
+                    <td class="help">
+                        <img class="dice" src="img/3.png"/>
+                    </td>
+                    <td class="help">
+                        <img class="dice" src="img/3.png"/>
+                    </td>
+                    <td class="help">
+                        <img class="dice" src="img/5.png"/>
+                    </td>
+                    <td class="help">
+                        <p>Zählt 13</p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <h1>Spielende</h1>
+            <p>
+                Ist der Spielzettel voll, so ist das Spiel beendet und die Punkte werden zusammengezählt.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
